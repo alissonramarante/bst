@@ -1,4 +1,4 @@
-package main.java.problems;
+package problems;
 
 import adt.bst.BSTImpl;
 import adt.bst.BSTNode;
@@ -32,20 +32,20 @@ public class BSTInteger extends BSTImpl<Integer>{
     }
 
     @Override
-	public BSTNode<T> search(T element) {
+	public BSTNode<Integer> search(Integer element) {
 		return search(root, element);
 	}
 
-	protected BSTNode<T> search(BSTNode<T> node, T element) {
-		BSTNode<T> result = node;
+	protected BSTNode<Integer> search(BSTNode<Integer> node, Integer element) {
+		BSTNode<Integer> result = node;
 		if (element != null) {
 			if (!node.isEmpty()) {
 				if (element.compareTo(node.getData()) == 0) {
 					result = node;
 				} else if (element.compareTo(node.getData()) < 0) {
-					result = search((BSTNode<T>)node.getLeft(), element);
+					result = search((BSTNode<Integer>)node.getLeft(), element);
 				} else {
-					result = search((BSTNode<T>)node.getRight(), element);
+					result = search((BSTNode<Integer>)node.getRight(), element);
 				}
 			}
 		}

@@ -1,6 +1,6 @@
-package main.java.problems;
+package problems;
 
-import main.java.adt.bst.BSTImpl;
+import adt.bst.BSTImpl;
 
 public class FamilyBSTImpl<T extends Comparable<T>> extends BSTImpl<T> implements FamilyBST<T>{
 

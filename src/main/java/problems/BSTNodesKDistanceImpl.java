@@ -1,7 +1,7 @@
-package main.java.problems;
+package problems;
 
+import java.util.List;
 import adt.bst.BSTImpl;
-import adt.bst.BSTNode;
 
 public class BSTNodesKDistanceImpl<T extends Comparable<T>> extends BSTImpl<T> implements BSTNodesKDistance<T> {
 

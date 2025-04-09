@@ -1,4 +1,4 @@
-package main.java.adt.bst;
+package adt.bst;
 
 import adt.bt.BTNode;
 

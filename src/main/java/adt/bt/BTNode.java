@@ -1,4 +1,4 @@
-package main.java.adt.bt;
+package adt.bt;
 
 /**
  * The node of a binary tree. Its internal data has type T, which does not need
