@@ -59,4 +59,6 @@ public interface BTOperations<T> {
      * - Sua solução DEVE visitar apenas UMA vez cada nó da árvore 
      **/
     public boolean isSimilar(BTNode<T> node11, BTNode<T> node2);
+    
+    public boolean equals(BST<T> tree1, BST<T> tree2);
 }
