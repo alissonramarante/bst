@@ -20,9 +20,9 @@ public class DescendingOrder<T extends Comparable<T>> extends BSTImpl<T> {
 
     private void descendingOrderHelper(BSTNode<T> node, List<T> resultList) {
         if (node.getData() != null) {
-            descendingOrderHelper((BSTNode<T>) node.getLeft(), resultList);
-            resultList.add(node.getData());
             descendingOrderHelper((BSTNode<T>) node.getRight(), resultList);
+            resultList.add(node.getData());
+            descendingOrderHelper((BSTNode<T>) node.getLeft(), resultList);
         }
     }
 

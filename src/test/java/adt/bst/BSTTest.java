@@ -1,7 +1,12 @@
 package adt.bst;
 
-import main.java.adt.bst.BSTImpl;
-import main.java.adt.bt.BTNode;
+import adt.bst.BSTImpl;
+import adt.bt.BTNode;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
 
 public class BSTTest {
     private BSTImpl<Integer> tree;
